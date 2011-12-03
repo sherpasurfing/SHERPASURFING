@@ -1,6 +1,18 @@
-SHERPASURFING is an open source Cyber Security Platform.
 
-The initial delivery will be coming at the completion of the current test cycle.
-if you have questions please email sherpasurfing@gmail.com
+HERPASURFING is an open source Cyber Security Solution
 
+For Information or questions: sherpasurfing@gmail.com
+
+
+SHERPA is based on the CLOUDERA stack and will provide the following:
+
+Enrichment Sources - The Enrichment Branch is provided for all of the Cyber Security enrichment sources and services provided by the contributors of the project. 
+
+Contrib - The Contributor Branch is provided for the submission by contributors of the SHERPASURFING Project
+
+Doc - All Documentation for the project
+
+Cookbook - The Cookbook will not be considered to be system documentation. This is provided for more of a howto guide based on successful analytic patterns.
+
+Framework - The service framework for SHERPA
 
