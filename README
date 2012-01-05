@@ -1,8 +1,7 @@
 
-HERPASURFING is an open source Cyber Security Solution
+SHERPASURFING is an open source Cyber Security Solution
 
 For Information or questions: sherpasurfing@gmail.com
-
 
 SHERPA is based on the CLOUDERA stack and will provide the following:
 
@@ -15,4 +14,10 @@ Doc - All Documentation for the project
 Cookbook - The Cookbook will not be considered to be system documentation. This is provided for more of a howto guide based on successful analytic patterns.
 
 Framework - The service framework for SHERPA
+
+##############################################################
+
+
+1/5/2012 - Netflow configuration, completed testing and deploying sensor.conf and silk.conf to
+capture netflow data
 
