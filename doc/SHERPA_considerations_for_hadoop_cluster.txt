@@ -1,0 +1,66 @@
+///--------------------------------------------------------------------
+///
+///  SHERPASURFING is an open source solution. The components  that are provided
+///  are intended to aid in the development of a Cyber Security Solution at no
+///  cost.
+///
+///    Copyright (C) 2010 - 2016  Wayne wheeles aka "SHERPA"
+///
+///  This program is free software: you can redistribute it and/or modify
+///  it under the terms of the GNU General Public License as published by
+///  the Free Software Foundation, either version 3 of the License, or
+///  (at your option) any later version.
+///
+///  This program is distributed in the hope that it will be useful,
+///  but WITHOUT ANY WARRANTY; without even the implied warranty of
+///  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+///  GNU General Public License for more details.
+///
+///  You should have received a copy of the GNU General Public License
+///  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+///
+///--------------------------------------------------------------------
+
+
+
+Key lesson learned, Cache intermediate results in the iteration stages using -cacheFile
+
+Out of band Tasktracker heartbeat: Set mapreduce.tasktracker.outofband.heartbeat = true
+Expert: Set this to true to let the tasktracker send an out-of-band heartbeat on task-completion for better latency.
+
+Top Five Issues
+
+1.Insufficient memory in the nodes given the Hadoop configuration and the other processes running
+2.Too many small files used as input to MapReduce jobs
+3.Poor (or non-existent) job submission management a.Unlimited jobs can be submitted by each user
+b.FairScheduler not being configured effectively
+
+4.Default HDFS block size is almost always too small 64MB should be increases to 128MB/256MB
+
+5.Too many Map spills to disk will merging emitted data for the reducer  the objective is one per Map task. 
+
+Settings that were used for development
+
+core-site.xml (props)
+
+io.file.buffer.size=65536
+
+io.sort.mb=1024
+
+
+
+hdfs-site.xml (props)
+
+dfs.datanode.handler.count=5
+
+dfs.block.size=268435456
+
+mapred-site.xml (props)
+
+io.sort.record.percent=0.15
+
+mapred.output.compress=true
+
+mapred.output.compression.type=block
+
+io.sort.factor=100
