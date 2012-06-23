@@ -1,23 +1,69 @@
+///--------------------------------------------------------------------
+///
+///  SHERPASURFING is an open source solution. The components  that are provided
+///  are intended to aid in the development of a Cyber Security Solution at no
+///  cost.
+///
+///    Copyright (C) 2010 - 2016  Wayne wheeles aka "SHERPA"
+///
+///  This program is free software: you can redistribute it and/or modify
+///  it under the terms of the GNU General Public License as published by
+///  the Free Software Foundation, either version 3 of the License, or
+///  (at your option) any later version.
+///
+///  This program is distributed in the hope that it will be useful,
+///  but WITHOUT ANY WARRANTY; without even the implied warranty of
+///  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+///  GNU General Public License for more details.
+///
+///  You should have received a copy of the GNU General Public License
+///  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+///
+///--------------------------------------------------------------------
+
 
 SHERPASURFING is an open source Cyber Security Solution
 
+
+The objective of the project is for those individuals and organizations who
+need a low cost solution for Cybersecurity will have one. In addition, to
+those individuals and organizations who want to use some of the components
+PLEASE do. The intent is to provide a resource and if you ever have 
+questions please let contact me or one of my awesome contributors. If one piece
+of code makes a difference than it is all worth while. 
+
+The contributors, these are the people who have influenced and made this possible. 
+The tools and tradecraft provided here are a product of their dedication and
+professionalism.
+
 For Information or questions: sherpasurfing@gmail.com
 
-SHERPA is based on the CLOUDERA stack and will provide the following:
 
-Enrichment Sources - The Enrichment Branch is provided for all of the Cyber Security enrichment sources and services provided by the contributors of the project. 
+Platforms
 
-Contrib - The Contributor Branch is provided for the submission by contributors of the SHERPASURFING Project
+I have broadened the supported platform based on discussions to include components
+for NOSQL platforms including: Apache, CLOUDERA and Accumalo (Based on requests). 
 
-Doc - All Documentation for the project
+Project Repository Roadmap
 
-Cookbook - The Cookbook will not be considered to be system documentation. This is provided for more of a howto guide based on successful analytic patterns.
+common - Common elements and utilities that are used across the project will be located
+in this directory. All of the utilities that we have for working with data that will improve the security posture of an organization.
 
-Framework - The service framework for SHERPA
+decorators - In the SHERPA model, we have used decorators like many organizations to format data correctly and in an optimal form for analysis. Decorators have been phased
+out in Flume 1.1.* in favor or interceptors so we will publish all of the decorators
+that have been developed, peered and tested for use. We are in the process of moving
+these to the Interceptor model. The src directory will provide decorators and interceptors java source code.
 
-##############################################################
+doc - The doc directory is a reference set on how to install components, configure them and how they are used. Some of the documents in this directory are notes, that can be used for tuning and just thinking through some of the initial challenges of moving into the NOSQL world. The project will be providing a roadmap for building a solution from the ground up.
 
+enrichment - The enrichment (taking something and adding value) sources are provided in a variety of forms so that they can used with Hive, HDFS, HBASE and Accumalo for correlation. The DDL (when applicable) and the utilities to format the data will be provided in this directory with instructions on how to use them.
 
-1/5/2012 - Netflow configuration, completed testing and deploying sensor.conf and silk.conf to
-capture netflow data
+framework - The analytic framework is provided as a simple machanism for running analytic jobs on the platform. The intent of the framework is to be flat and simple since it is intended to support a broad audience. The src directory will provide the framework source so that it can be extended or modified.
+
+silk - We have provided a simple set of configurations for installation and configuration of Silk to collect netflow within an organization. Silk is one of many different data types that will be provided. The intent is to provide base configurations so that organizations can get started with the tools provided.
+
+sample data - We will be providing generated sample data in order to test and ensure that the components are working correctly.
+
+analytics - The analytics directory will contain a base pattern (empty) for an analytic and several sample analytics. The src directory will provide all of the source code for the provided analytics.
+
 
