@@ -39,31 +39,11 @@ professionalism.
 For Information or questions: sherpasurfing@gmail.com
 
 
-Platforms
+Object Definitions provided are valid for Hive or Impala
 
-I have broadened the supported platform based on discussions to include components
-for NOSQL platforms including: Apache, CLOUDERA and Accumalo (Based on requests). 
-
-Project Repository Roadmap
-
-common - Common elements and utilities that are used across the project will be located
-in this directory. All of the utilities that we have for working with data that will improve the security posture of an organization.
-
-decorators - In the SHERPA model, we have used decorators like many organizations to format data correctly and in an optimal form for analysis. Decorators have been phased
-out in Flume 1.1.* in favor or interceptors so we will publish all of the decorators
-that have been developed, peered and tested for use. We are in the process of moving
-these to the Interceptor model. The src directory will provide decorators and interceptors java source code.
-
-doc - The doc directory is a reference set on how to install components, configure them and how they are used. Some of the documents in this directory are notes, that can be used for tuning and just thinking through some of the initial challenges of moving into the NOSQL world. The project will be providing a roadmap for building a solution from the ground up.
-
-enrichment - The enrichment (taking something and adding value) sources are provided in a variety of forms so that they can used with Hive, HDFS, HBASE and Accumalo for correlation. The DDL (when applicable) and the utilities to format the data will be provided in this directory with instructions on how to use them.
-
-framework - The analytic framework is provided as a simple machanism for running analytic jobs on the platform. The intent of the framework is to be flat and simple since it is intended to support a broad audience. The src directory will provide the framework source so that it can be extended or modified.
-
-silk - We have provided a simple set of configurations for installation and configuration of Silk to collect netflow within an organization. Silk is one of many different data types that will be provided. The intent is to provide base configurations so that organizations can get started with the tools provided.
-
-sample data - We will be providing generated sample data in order to test and ensure that the components are working correctly.
-
-analytics - The analytics directory will contain a base pattern (empty) for an analytic and several sample analytics. The src directory will provide all of the source code for the provided analytics.
+doc - documentation
+ddl - directory for data structure definitions
+sampledata - test data sets for Impala and Hive
+enrichment - contains ddl and information on potential enrichment sources
 
 
