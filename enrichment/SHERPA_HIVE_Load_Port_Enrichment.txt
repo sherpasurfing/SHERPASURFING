@@ -1,1 +1,0 @@
-LOAD DATA INPATH “SHERPA_Port_list_Enrichment.txt” INTO TABLE port_assignments;
