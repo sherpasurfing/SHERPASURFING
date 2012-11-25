@@ -1,7 +1,0 @@
-CREATE TABLE port_assignments (
-Port INT, 
-Transport_Protocol STRING,
-Flag STRING,
-Description STRING) ROW FORMAT
-DELIMITED FIELDS TERMINATED BY ‘|’
-STORED AS TEXTFILE;
