@@ -1,6 +1,10 @@
 #!/bin/bash
 
 
+
+# Example of Bash shell executing commands in Impala
+#
+#
 # Flip interval is the delay between operations
 # simple shell for comparison of same SQL being run on Hive and Impala
 flipinterval=20

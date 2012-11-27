@@ -1,4 +1,6 @@
- //----------------------------------------------------------------------------//
+
+// Code Snippet Connection Example Java connecting to Impala
+//----------------------------------------------------------------------------//
   private static Connection getConnection() throws Exception {
     Driver d;
     d = (Driver)Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
@@ -9,5 +11,5 @@
     Connection c = DriverManager.getConnection("jdbc:odbc:Sherpa");
     return c;
   }
-  //---------------------------------------------------------------------------//
+//---------------------------------------------------------------------------//
   
