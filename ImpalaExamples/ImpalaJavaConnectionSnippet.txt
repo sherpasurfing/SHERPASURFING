@@ -1,0 +1,13 @@
+ //----------------------------------------------------------------------------//
+  private static Connection getConnection() throws Exception {
+    Driver d;
+    d = (Driver)Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
+    String url = "jdbc.odbc.sherpa";
+    String username = "";
+    String password = "";
+
+    Connection c = DriverManager.getConnection("jdbc:odbc:Sherpa");
+    return c;
+  }
+  //---------------------------------------------------------------------------//
+  

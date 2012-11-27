@@ -1,0 +1,1 @@
+create database sherpa location '/user/sherpa/data/';
