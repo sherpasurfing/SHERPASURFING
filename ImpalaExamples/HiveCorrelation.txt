@@ -1,0 +1,1 @@
+Select a.sip, a.dip, count(b.alert_id) from sherpa.netflow_silk a join sherpa.snort b on (a.sip=b.src_ip6_1_or_ip4_num and a.dip=b.dst_ip6_1_or_ip4_num) where a.starthour >= 2 and a.starthour <= 7 group by a.sip, a.dip;
