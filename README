@@ -41,9 +41,13 @@ For Information or questions: sherpasurfing@gmail.com
 
 Object Definitions provided are valid for Hive or Impala
 
-doc - documentation
+ImpalaExamples - This directory contains key configuration files that were captured
+during the development of the demonstration platform. Code snippets and entire applications are provided from the demonstration.
+
+cyberdatasets - The are the core data sets of netflow and intrusion detection systems (ids).
+doc - The documentation end to end
+enrichmentdatasets - 10 Enrichment sources for enrichment
 ddl - directory for data structure definitions
 sampledata - test data sets for Impala and Hive
-enrichment - contains ddl and information on potential enrichment sources
 
 
