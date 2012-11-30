@@ -1,0 +1,1 @@
+LOAD DATA LOCAL INPATH '/user/scripts/ddl/SampleBlackListedDomains.csv' INTO TABLE BLACKLISTED_DOMAINS;

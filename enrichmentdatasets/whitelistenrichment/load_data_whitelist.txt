@@ -1,0 +1,1 @@
+LOAD DATA LOCAL INPATH '/user/scripts/ddl/WhiteList.csv' INTO TABLE WHITELIST;

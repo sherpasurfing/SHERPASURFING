@@ -1,0 +1,1 @@
+LOAD DATA INPATH “Port_Enrichment_Data.txt” INTO TABLE port_assignments;
