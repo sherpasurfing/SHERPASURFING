@@ -29,3 +29,5 @@ Netflow is an aggregation of network packet traffic. Silk is a netflow generator
 Silk can be found at:
 
 http://tools.netsa.cert.org/silk/
+
+The silk configuration file is provided as an example
